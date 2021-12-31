@@ -1,0 +1,29 @@
+.login{
+   width: 500px;
+   background-color: #eee;
+   border: none;
+   border-radius: 10px;
+   padding:15px;
+   margin: 10px;
+}
+.form-title{
+   padding:10px;
+   text-align: center;
+}
+.login input{
+   display: block;
+   margin-bottom: 15px;
+   width: 100%;
+   border-radius: 5px;
+   border: 1px solid rgb(177, 177, 177);
+   background-color: #fff;
+   padding: 10px;
+   
+}
+.form-button{
+   padding: 10px;
+   background-color: #ffd342;
+   border: none;
+   border-radius: 5px;
+   
+}

@@ -1,0 +1,59 @@
+.about{
+   height: 100vh;
+   display: flex;
+   align-items:center;
+   justify-content:center;
+   border: 1px solid black;
+}
+.ab-left{
+   flex: 1;
+   display: flex;
+   align-items:center;
+   justify-content: left;
+   position:relative;
+   height: 100%;
+}
+.ab-card{
+   width: 80%;
+   height: 70vh;
+   position: relative;
+   overflow: hidden;
+   border-radius: 30px;
+}
+
+.ab-img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.ab-title{
+   font-weight: 500;
+}
+.ab-sub{
+   margin: 20px 0;
+}
+.ab-right{
+   flex: 1;
+}
+.ab-desc{
+   font-weight: 300;
+}
+.ab-award-img{
+   width: 120px;
+   height: 120px;
+   border-radius: 20px;
+}
+.ab-award{
+   margin-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.ab-award-text{
+   width: 75%;
+}
+.ab-award-title{
+   font-weight: bold;
+   color: #555;
+   margin-bottom: 10px;
+}

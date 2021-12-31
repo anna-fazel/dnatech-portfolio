@@ -1,0 +1,31 @@
+.card-page{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card {
+    margin-right: 10px;
+    width: 400px;
+    height: 500px;
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 1px #eee;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 16px;
+}
+.card h3,p {
+    padding: 16px;
+} 
+.card-button{
+    padding: 10px;
+    background-color: #ffd342;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 16px;
+    cursor: pointer;
+}
