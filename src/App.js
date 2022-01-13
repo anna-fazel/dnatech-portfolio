@@ -1,9 +1,11 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Slider from "./components/Slider";
 
 function App() {
   return (
@@ -11,9 +13,11 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <div className="container">
-          <Route exact path="/">
+          <Route exact path="/"> 
             <Home />
+          </Route>
+          <Route path="/slider">
+            <Slider />
           </Route>
           <Route path="/contact">
             <Contact />
@@ -21,7 +25,6 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          </div>
         </Switch>
         <Footer />
       </div>

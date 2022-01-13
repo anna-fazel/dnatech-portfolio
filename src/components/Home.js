@@ -1,38 +1,25 @@
-import { useState } from "react";
-
-import Card from "./Card";
+import React from "react";
+import './header.css';
+import About from './About'
+import Slider from './Slider'
+import Contact from './Contact'
 
 const Home = () => {
-  const [card, setCard] = useState([
-    {
-      id: 1,
-      img: "https://cdn.pixabay.com/photo/2021/11/09/18/51/llama-6782140_960_720.jpg",
-      heading: "heading1",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, voluptatibus.",
-      author: "admin",
-    },
-    {
-      id: 2,
-      img: "https://cdn.pixabay.com/photo/2021/11/09/18/51/llama-6782140_960_720.jpg",
-      heading: "heading2",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, voluptatibus.",
-      author: "anna",
-    },
-    {
-      id: 3,
-      img: "https://cdn.pixabay.com/photo/2021/11/09/18/51/llama-6782140_960_720.jpg",
-      heading: "heading2",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, voluptatibus.",
-      author: "admin",
-    },
-  ]);
-
   return (
-    <div>
-      <Card card={card} title="All" />
-      {/* <Card card={card.filter((card)=>card.author==='anna')} title="Anna"/>  */}
+    <div className="homePage">
+    <header className="header">
+      
+        <h1>DNA TECHNOLOGIES</h1>
+        <h2>Presents Web Desktop Mobile Developement</h2>
+        <button className="dna-button">Contact Us</button>
+      
+    </header>
+
+    {/* <About />
+    <Slider />
+    <Contact /> */}
     </div>
   );
 };
 
-export default Home; // comment
+export default Home;

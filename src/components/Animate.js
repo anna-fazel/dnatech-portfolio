@@ -1,6 +1,7 @@
 import './animate.css';
 
 const Animate = () => {
+  
   return (
     <div>
       <div className="i-title">
@@ -23,14 +24,7 @@ const Animate = () => {
           <div className="i-title-item">JavaScript</div>
         </div>
       </div>
-      {/* <div className="animate1">
-         <button onClick={()=>{
-
-         }}>Mount</button>
-         <div className="box">
-            <div></div>
-         </div>
-      </div> */}
+      
      
     </div>
   );

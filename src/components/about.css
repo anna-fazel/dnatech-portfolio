@@ -1,23 +1,37 @@
-.about{
-   height: 100vh;
+.ab-cards{
+   padding:100px;
+   
+}
+.ab-section{
+   padding:50px;
+   height:auto;
+   background-color: rgb(255, 253, 236);
    display: flex;
    align-items:center;
    justify-content:center;
-   border: 1px solid black;
+  
 }
 .ab-left{
    flex: 1;
    display: flex;
-   align-items:center;
-   justify-content: left;
-   position:relative;
-   height: 100%;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   
+   
 }
+.ab-card.bg {
+   position: absolute;
+   top: 0;
+   left:80px;
+   background-color: #454752;
+ }
 .ab-card{
-   width: 80%;
+   width: 60%;
    height: 70vh;
    position: relative;
-   overflow: hidden;
+   top: 30px;
+  overflow: hidden;
    border-radius: 30px;
 }
 
@@ -26,34 +40,74 @@
    height: 100%;
    object-fit: cover;
 }
-.ab-title{
-   font-weight: 500;
-}
-.ab-sub{
-   margin: 20px 0;
-}
+
 .ab-right{
    flex: 1;
+   padding-top: 50px;
+   
 }
-.ab-desc{
-   font-weight: 300;
+.ab-title{
+   font-weight: 700;
 }
-.ab-award-img{
-   width: 120px;
-   height: 120px;
+.i-title{
+   height: 50px;
+   width: 250px;
+   overflow: hidden;
+   background-color: #333;
+   margin: 20px 0;
+   text-align: center;
    border-radius: 20px;
 }
-.ab-award{
-   margin-top: 50px;
-   display: flex;
+.i-title-wrapper{
+   height: 100%;
+   animation: move 10s ease-in-out infinite alternate;
+}
+@keyframes move {
+   15%{transform: translateY(-50px);}
+   30%{transform: translateY(-100px);}
+   45%{transform: translateY(-150px);}
+   60%{transform: translateY(-200px);}
+   75%{transform: translateY(-250px);}
+   88%{transform: translateY(-300px);}
+   100%{transform: translateY(-350px);}
+}
+
+.i-title-item{
+   height: 50px;
+   font-size: 40px;
+   font-weight: bold;
+   color: #ffd342;
    align-items: center;
-   justify-content: space-between;
+   letter-spacing: 2PX;
+}
+
+.ab-desc{
+   font-weight: 400;
+   padding: 0;
+}
+
+.ab-award{
+   margin-top: 40px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+.ab-award-img{
+   width: 100px;
+   height: 100px;
+   border-radius: 20px;
 }
 .ab-award-text{
-   width: 75%;
+   margin-left: 20px;
+   margin-top: 20px;
+   
 }
 .ab-award-title{
    font-weight: bold;
    color: #555;
    margin-bottom: 10px;
+   
+}
+.ab-award-desc{
+   padding: 0;
 }

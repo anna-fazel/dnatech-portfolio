@@ -1,7 +1,7 @@
-
+import React from "react";
 import './card.css'; 
 
-const Card = ({card, title}) => {
+const Card = ({card}) => {
     const cardButtonClick = (e)=> {
         console.log("botton clicked", e)
     }
@@ -14,10 +14,9 @@ const Card = ({card, title}) => {
             {card.map((card)=>(
                 <div className='card' key={card.id}>
                     <img src={card.img} />
-                    <h2>{title}</h2>
                     <h3>{card.heading}</h3>
                     <p>{card.desc}</p>
-                    <button className='card-button' onClick={cardButtonClick}>Read More</button>
+                    <button className='dna-button' onClick={cardButtonClick}>Read More</button>
                 </div>
 
             ))}
