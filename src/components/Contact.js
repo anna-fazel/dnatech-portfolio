@@ -8,6 +8,12 @@ import { IconContext } from "react-icons";
 
 const Contact = () => {
   return (
+  <div className="contactPage">
+
+  
+  <div className="c-header">
+  <h1>Contact Us</h1>
+  </div>
     <div className="contact-form">
       <div className="c-left">
         <h3 className="c-title">Let Us Know How We Can Help</h3>
@@ -15,7 +21,7 @@ const Contact = () => {
           <div className="c-icons"><IconContext.Provider
             value={{
               color: "red",
-              size: "1.3rem",
+              size: "1.2rem",
             }}
           >
             <div>
@@ -25,18 +31,18 @@ const Contact = () => {
           <div className="c-icons"><IconContext.Provider
             value={{
               color: "blue",
-              size: "1.3rem",
+              size: "1.2rem",
               
             }}
           >
             <div>
-              <MdEmail />   info@dnatecnology.com.au
+              <MdEmail /> info@dnatecnology.com.au
             </div>
           </IconContext.Provider></div>
           <div className="c-icons"><IconContext.Provider
             value={{
               color: "orange",
-              size: "1.3rem",
+              size: "1.2rem",
             }}
           >
             <div>
@@ -67,6 +73,7 @@ const Contact = () => {
           <button className="form-button">Send Message</button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

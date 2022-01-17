@@ -1,33 +1,35 @@
-/* new test */
 .navbar {
-  position: fixed;
-  height: 90px;
+  
+  height: 100px;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
+  position: fixed;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 0 16rem;
+  justify-content: space-between;
+  padding: 0 100px;
 }
 
-.navbar.active{
+.navbar.active {
   background: #373c5ab9;
 }
 
 .nav-logo {
   flex: 1;
-  
 }
-/* .nav-links {
-  flex:3 ;
+.nav-menu {
+  flex: 4;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-} */
+  
+  
+}
+
 .nav-logo img {
+  
   display: block;
   width: 88px;
   height: 48px;
@@ -39,7 +41,7 @@
 
 .nav-menu a {
   padding: 10px 16px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
@@ -49,67 +51,42 @@
   color: #333;
   border-radius: 20px;
 }
-.menu-icon {
+.hamburger {
   display: none;
- 
-}
-.nav-menu {
-  display: flex;
-  /* width: 60vw; */
-  justify-content: flex-end;
- 
+  cursor: pointer;
 }
 
-
-
-
-@media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
+@media screen and (max-width: 999px) {
+  .navbar {
+   max-width: 100%;
+   padding: 0 24px;
   }
-
+  
+  .hamburger {
+    display: block;
+  }
   .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    top: 80px;
+    position: fixed;
     left: -100%;
-    opacity: 1;
+    top: 100px;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50vh;
+    z-index: 999;
+    text-align: center;
     transition: all 0.5s ease;
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: #373c5ae7;
     left: 0;
     opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
   }
 
   .nav-menu a {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
-    display: table;
   }
-  .nav-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  }
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-  }
-
 }

@@ -1,9 +1,23 @@
+.c-header{
+  padding:10rem;
+  background-color: #2c502e;
+  height: 400px;
+  text-align: center;
+  vertical-align: middle;
+}
+.c-header>h1{
+  color: #fff;
+  padding:0;
+
+}
 .contact-form {
   background-color: #eee;
   border: none;
   border-radius: 10px;
-  padding: 50px 100px;
+  padding: 2rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .c-left {
   flex: 1;
@@ -38,5 +52,41 @@ textarea {
 
 .c-icons{
    padding: 28px 0;
+}
+@media screen and (max-width:1120px) {
+  .c-header{
+    padding: 7rem;
+    height: 40vh;
+  }
+  .contact-form {
+     padding: 2rem;
+  }
+  .c-title{
+    width: 90%;
+    font-size: 40px;
+  }
+}
+
+
+
+
+@media screen and (max-width:690px) {
+  .c-header{
+    height: 30vh;
+     
+  }
+  .contact-form {
+    padding: 2rem 1rem;
+    flex-direction: column;
+ }
+ .c-title{
+  width: 100%;
+  font-size: 40px;
+  padding-bottom: 1rem;
+}
+.c-icons{
+  text-align: center;
+}
+
 }
 

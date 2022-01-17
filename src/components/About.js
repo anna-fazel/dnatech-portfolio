@@ -1,10 +1,11 @@
 import React from "react";
 import "./about.css";
 import { useState } from "react";
-import face from "../img/face.jpg";
-import award from "../img/award.png";
-import about from "../img/about.jpg";
+
+
+
 import Card from "./Card";
+import Animate from "./Animate";
 
 const About = () => {
   const [card, setCard] = useState([
@@ -37,48 +38,11 @@ const About = () => {
     },
   ]);
   return (
-    <div className="about-p">
-      <div className="ab-section">
-        <div className="ab-left">
-          <div className="ab-card bg"></div>
-          <div className="ab-card">
-            <img src={about} className="ab-img" />
-          </div>
+    <div className="aboutPage">
+      <div className="ab-header">
+        <h1>About Us</h1>
         </div>
-        <div className="ab-right">
-          <h1 className="ab-title">TECHNOLOGIES</h1>
-          <div className="i-title">
-            <div className="i-title-wrapper">
-              <div className="i-title-item">Django</div>
-              <div className="i-title-item">Python</div>
-              <div className="i-title-item">ReactJS</div>
-              <div className="i-title-item">HTML</div>
-              <div className="i-title-item">CSS</div>
-              <div className="i-title-item">JavaScript</div>
-              <div className="i-title-item">SCSS</div>
-              <div className="i-title-item">jQuery</div>
-            </div>
-          </div>
-
-          <p className="ab-desc">
-            Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-            consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Reprehenderit
-            exercitationem iste voluptatum odit expedita assumenda, aliquid et,
-            placeat magnam. Et, exercitationem! Lorem ipsum dolor sit.
-          </p>
-          <div className="ab-award">
-            <img src={award} alt="" className="ab-award-img" />
-            <div className="ab-award-text">
-              <h4 className="ab-award-title">Award Title</h4>
-              <p className="ab-award-desc">
-                Lorem ipsum dolor sit amet consectetur.
-              </p>
-            </div>
-          </div>
-        </div>
-       
-      </div>
+       <Animate />
       <div className="ab-cards">
       <Card card={card} />
     </div>
