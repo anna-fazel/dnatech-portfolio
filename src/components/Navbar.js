@@ -3,9 +3,12 @@ import {Link } from 'react-router-dom'
 import "./navbar.css";
 import logo from '../img/logo.png'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { useSelector } from "react-redux";
 
 
 const Navbar = () => {
+
+  const name = useSelector((state) => state.user.name );
 
   const [click, setClick] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -15,7 +18,7 @@ const Navbar = () => {
 
   const changeBgc =() => {
     console.log(window.scrollY)
-   if (window.scrollY >= 90) {
+   if (window.scrollY >= 150) {
      setNavbar(true);
    } else {
       setNavbar(false);
@@ -23,6 +26,8 @@ const Navbar = () => {
   
   }
   window.addEventListener('scroll', changeBgc);
+
+   
 
   return (
       
@@ -38,13 +43,16 @@ const Navbar = () => {
                     {click ? (<FaTimes size={40} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={40} style={{ color: '#ffffff' }} />)}
 
-                </div>
+        </div>
 
         <div className={click ? 'nav-menu active' : 'nav-menu'}>
           <Link to="/" onClick={closeMenu}>Home </Link>
           <Link to="/about" onClick={closeMenu}>About</Link>
           <Link to="/contact" onClick={closeMenu}>Contact</Link>
           <Link to="/slider" onClick={closeMenu}>Slider</Link>
+          <Link to="/profile" onClick={closeMenu}>Profile</Link>
+          <Link to="/login" onClick={closeMenu}>Login</Link>
+          <div ><p> {name}</p></div>
         </div>
       </nav> 
   );

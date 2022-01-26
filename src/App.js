@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
+import Profile from "./components/Profile";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -25,8 +27,17 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+       
         </Switch>
+        
         <Footer />
+      
       </div>
     </Router>
   );

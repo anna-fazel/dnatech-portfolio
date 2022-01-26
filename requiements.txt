@@ -1,0 +1,7 @@
+React Router dom
+React icons 
+React Spring ==> animation
+React Redux & Redux Toolkit
+
+
+

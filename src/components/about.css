@@ -1,10 +1,10 @@
-
+.aboutPage{
+   
+}
 .ab-header{
    padding:10rem;
-   background-color: #45529c;
-   height: 400px;
+   background-color: #252525;
    text-align: center;
-   vertical-align: middle;
 }
 .ab-header>h1{
    color: #fff;

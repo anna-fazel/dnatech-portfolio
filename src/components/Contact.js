@@ -14,9 +14,10 @@ const Contact = () => {
   <div className="c-header">
   <h1>Contact Us</h1>
   </div>
+
     <div className="contact-form">
       <div className="c-left">
-        <h3 className="c-title">Let Us Know How We Can Help</h3>
+        <h2 className="c-title">Get In Touch Now</h2>
         <div className="c-info">
           <div className="c-icons"><IconContext.Provider
             value={{
@@ -55,8 +56,8 @@ const Contact = () => {
         </div>
       </div>
       <div className="c-right">
-        <form action="" className="">
-          <h3 className="form-title">Leave a Message</h3>
+        <form >
+          <h2 className="c-title">Let Us Know How We Can Help</h2>
           <label htmlFor="name">Name*</label>
           <input type="text" id="name" className="input" name="name" required />
 
@@ -69,7 +70,7 @@ const Contact = () => {
             required
           />
           <label htmlFor="msg">Message*</label>
-          <textarea name="msg" id="msg" cols="20" rows="5" required></textarea>
+          <textarea name="msg" id="msg" cols="20" rows="4" required></textarea>
           <button className="form-button">Send Message</button>
         </form>
       </div>

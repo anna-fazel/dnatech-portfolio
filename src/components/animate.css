@@ -16,7 +16,7 @@
   position: absolute;
   top: 0;
   left: 5rem;
-  background-color: #454752;
+  background-color: var(--blue5);
 }
 .ab-card {
   width: 65%;

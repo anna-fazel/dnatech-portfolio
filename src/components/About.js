@@ -2,10 +2,9 @@ import React from "react";
 import "./about.css";
 import { useState } from "react";
 
-
-
 import Card from "./Card";
 import Animate from "./Animate";
+import Slider from "./Slider";
 
 const About = () => {
   const [card, setCard] = useState([
@@ -37,15 +36,17 @@ const About = () => {
       author: "admin",
     },
   ]);
+
   return (
     <div className="aboutPage">
       <div className="ab-header">
         <h1>About Us</h1>
-        </div>
-       <Animate />
+      </div>
+      <Animate />
       <div className="ab-cards">
-      <Card card={card} />
-    </div>
+        <Card card={card} />
+      </div>
+      <Slider />
     </div>
   );
 };
