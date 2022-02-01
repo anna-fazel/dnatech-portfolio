@@ -6,14 +6,14 @@ import about from "../img/about.jpg";
 const Animate = () => {
   
   return (
-    <div className="ab-section"> 
-    <div className="ab-left">
+    <div className="animate"> 
+    <div className="an-left">
       <div className="ab-card bg"></div>
       <div className="ab-card">
         <img src={about} className="ab-img" />
       </div>
     </div>
-    <div className="ab-right">
+    <div className="an-right">
       <h2 className="ab-title">MODERN TECHNOLOGIES</h2>
       <div className="i-title">
         <div className="i-title-wrapper">

@@ -1,6 +1,6 @@
 .cards{ 
-    margin: 30px 0;
-    padding: 2rem 8rem;
+    /* margin: 30px 0; */
+    padding: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,12 +26,12 @@
 .card button{
    position: absolute;
    bottom: 16px;
-   left: 16px;
+   /* left: 16px; */
 }
 
-@media screen and (max-width:1120px) {
+@media screen and (max-width:1180px) {
     .cards{
-        padding: 1rem ;
+        padding: 2rem ;
     }
  }
  

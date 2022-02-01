@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import {Link } from 'react-router-dom'
 import "./navbar.css";
 import logo from '../img/logo.png'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import face from '../img/face.png'
+import { FaBars, FaTimes, FaCaretDown, FaUserAlt } from 'react-icons/fa'
 import { useSelector } from "react-redux";
 
 
@@ -18,7 +19,7 @@ const Navbar = () => {
 
   const changeBgc =() => {
     console.log(window.scrollY)
-   if (window.scrollY >= 150) {
+   if (window.scrollY >= 100) {
      setNavbar(true);
    } else {
       setNavbar(false);
@@ -52,7 +53,9 @@ const Navbar = () => {
           <Link to="/slider" onClick={closeMenu}>Slider</Link>
           <Link to="/profile" onClick={closeMenu}>Profile</Link>
           <Link to="/login" onClick={closeMenu}>Login</Link>
-          <div ><p> {name}</p></div>
+          <Link to="#" >
+            <img src={face} className="userpic"/>
+            <span className="userspan">{name}<FaCaretDown/></span></Link>
         </div>
       </nav> 
   );
